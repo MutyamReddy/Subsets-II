@@ -8,7 +8,7 @@ public:
             return ;
         }
         for(int i=id;i<A.size();i++){
-            if(i>id&&A[i]==A[i-1])continue;
+            if(i>id&&A[i]==A[i-1])continue; //To check for duplicates
             curr.push_back(A[i]);
             solve(A,curr,i+1);
             curr.pop_back();
